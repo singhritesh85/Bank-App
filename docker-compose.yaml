@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  mysql-primary.mysql.svc.cluster.local:
+  mysql-primary.mysql.svc.cluster.local:   # I made such a service name for mysql container because in that case I do not need to change application.properties file.
     image: mysql:8.0.0
     environment:
       MYSQL_ROOT_PASSWORD: Dexter@123
